@@ -6,7 +6,7 @@
 
     static class Constants
     {
-        public static TimeSpan ServiceTimeout { get; } = TimeSpan.FromMinutes(5);
+        public static TimeSpan ServiceTimeout { get; } = TimeSpan.FromMinutes(0.5);
 
         public static string ServiceName { get; } = "RadeonResetBugFixService";
 

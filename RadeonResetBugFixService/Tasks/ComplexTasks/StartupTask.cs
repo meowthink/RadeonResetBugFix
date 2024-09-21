@@ -18,10 +18,10 @@
         protected override ITask[] Subtasks => new ITask[]
         {
             new EnableBasicDisplayStartupTask(),
-            new SleepTask(TimeSpan.FromSeconds(40)),
+            new SleepTask(TimeSpan.FromSeconds(10)),
             new EnableAmdVideoTask(this.Context.StartupDevicesStatus),
             new DisableVirtualVideoTask(this.Context.StartupDevicesStatus),
-            new SleepTask(TimeSpan.FromSeconds(20)),
+            new SleepTask(TimeSpan.FromSeconds(5)),
             new FixMonitorTask(),
             new DisableVirtualVideoTask(this.Context.StartupDevicesStatus),
             new FixMonitorTask()
